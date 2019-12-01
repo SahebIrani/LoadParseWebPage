@@ -1,0 +1,20 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<li id="l-bourse" style="" class=" high" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location='markets/stock'">
+    <h3><em></em> »Ê—”</h3>
+    <span class="info-value">
+        <span class="info-price">@ViewData["infoPrice"]</span>
+    </span>
+    <br />
+    <span class="info-change">@ViewData["infoChange"]</span>
+</li>
